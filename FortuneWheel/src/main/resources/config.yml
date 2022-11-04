@@ -1,0 +1,22 @@
+mythical:
+  mythic1: ELYTRA
+  mythic2: END_CRYSTAL
+  mythic3: SPAWNER
+legendary:
+  legend1: DIAMOND_SWORD
+  legend2: DIAMOND_PICKAXE
+  legend3: NETHERITE_INGOT
+rare:
+  rare1: ZOMBIE_SPAWN_EGG
+  rare2: SKELETON_SPAWN_EGG
+  rare3: COW_SPAWN_EGG
+  rare4: CHICKEN_SPAWN_EGG
+uncommon:
+  uncommon1: EXPERIENCE_BOTTLE
+  uncommon2: COAL
+  uncommon3: LAPIS_LAZULI
+  uncommon4: REDSTONE
+  uncommon5: IRON_INGOT
+common:
+  common1: REDSTONE_BLOCK
+  common2: NAME_TAG

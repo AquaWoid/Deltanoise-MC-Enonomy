@@ -1,0 +1,34 @@
+name: FortuneWheel
+version: '1.0-SNAPSHOT'
+main: fortunewheel.fortunewheel.FortuneWheel
+api-version: 1.19
+authors: [ Wood ]
+description: Wood's Fortune Wheel
+website: https://discord.gg/hfUCBPTq4j
+commands:
+  lottery:
+      description: Spin the wheel!
+      usage: /lottery
+      aliases: l
+      permission: lottery
+  buyvoucher:
+      description: buy vouchers!
+      usage: /buyvoucher
+      aliases: bv
+      permission: buyvoucher
+  reloadconfig:
+    description: Reloads the config
+    usage: /reloadconfig
+    aliases: rcfg
+    permission: reloadconfig
+  prizes:
+    description: shows the current prizes
+    usage: /prizes
+    aliases: prz
+    permission: prizes
+  sendgold:
+    description: send gold to other players
+    usage: /sendgold
+    aliases: sg
+    permission: sendgold
+
