@@ -93,98 +93,141 @@ public class lottery implements CommandExecutor {
            if (lvScore.getScore() >= 1) {
 
                if (rnd == 1) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getMythic1())));
-                   player.sendMessage(ChatColor.DARK_RED + "Got 1 " + w_items.getMythic1() + " (0.5% Chance)");
+                    wItem item = w_items.getMythic1();
+                   ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_RED + "Got " + item.count + " " + item.name +  " (0.5% Chance)");
 
 
                }
                if (rnd == 2) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getMythic2())));
-                   player.sendMessage(ChatColor.DARK_RED + "Got 1 " + w_items.getMythic2() + " (0.5% Chance)");
+                   wItem item = w_items.getMythic2();
+                   ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_RED + "Got " + item.count + " " + item.name +  " (0.5% Chance)");
                }
                if (rnd == 3) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getMythic3())));
-                   player.sendMessage(ChatColor.DARK_RED + "Got 1 " + w_items.getMythic3() + " (0.5% Chance)");
+                wItem item = w_items.getMythic3();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_RED +  "Got " + item.count + " " + item.name +  " (0.5% Chance)");
                }
 
                if (rnd == 4 || rnd == 5) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getLegend1())));
-                   player.sendMessage(ChatColor.GOLD + "Got 1 " + w_items.getLegend1() + " (1% Chance)");
+                wItem item = w_items.getLegend1();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.GOLD +  "Got " + item.count + " " + item.name +  " (1% Chance)");
                }
                if (rnd == 6 || rnd == 7) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getLegend2())));
-                   player.sendMessage(ChatColor.GOLD + "Got 1 " + w_items.getLegend2() + " (1% Chance)");
+                wItem item = w_items.getLegend2();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.GOLD +  "Got " + item.count + " " + item.name +  " (1% Chance)");
                }
                if (rnd == 8 || rnd == 9) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getLegend3())));
-                   player.sendMessage(ChatColor.GOLD + "Got 1 " + w_items.getLegend3() + " (1% Chance)");
+                wItem item = w_items.getLegend3();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.GOLD +  "Got " + item.count + " " + item.name +  " (1% Chance)");
                }
 
 
                if (rnd >= 10 && rnd < 20) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getRare1())));
-                   player.sendMessage(ChatColor.DARK_PURPLE + "Got 1 " + w_items.getRare1() + " (4.5% Chance)");
+                wItem item = w_items.getRare1();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_PURPLE +  "Got " + item.count + " " + item.name +  " (4.5% Chance)");
                }
 
                if (rnd >= 20 && rnd < 30) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getRare2())));
-                   player.sendMessage(ChatColor.DARK_PURPLE + "Got 1 " + w_items.getRare2() + " (4.5% Chance)");
+                wItem item = w_items.getRare2();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_PURPLE +  "Got " + item.count + " " + item.name +  " (4.5% Chance)");
                }
 
                if (rnd >= 30 && rnd < 40) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getRare3())));
-                   player.sendMessage(ChatColor.DARK_PURPLE + "Got 1 " + w_items.getRare3() + " (4.5% Chance)");
+                wItem item = w_items.getRare3();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_PURPLE +  "Got " + item.count + " " + item.name +  " (4.5% Chance)");
                }
 
                if (rnd >= 40 && rnd < 50) {
-                   player.getInventory().addItem(new ItemStack(Material.matchMaterial(w_items.getRare4())));
-                   player.sendMessage(ChatColor.DARK_PURPLE + "Got 1 " + w_items.getRare4() + " (4.5% Chance)");
+                wItem item = w_items.getRare4();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                   player.getInventory().addItem(Stack);
+                   player.sendMessage(ChatColor.DARK_PURPLE +  "Got " + item.count + " " + item.name +  " (4.5% Chance)");
                }
 
                if (rnd >= 50 && rnd < 60) {
+                   wItem item = w_items.getUncommon1();
+                   ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                   Stack.setAmount(item.count);
 
-                   ItemStack xpStack = new ItemStack(Material.matchMaterial(w_items.getUncommon1()));
-                   xpStack.setAmount(64);
-
-                   player.getInventory().addItem(xpStack);
+                   player.getInventory().addItem(Stack);
 
 
-                   player.sendMessage(ChatColor.BLUE + "Got 64 " + w_items.getUncommon1() + " (10% Chance)");
+                   player.sendMessage(ChatColor.BLUE +  "Got " + item.count + " " + item.name +  " (10% Chance)");
                }
 
                if (rnd >= 60 && rnd < 70) {
-
-                   ItemStack Stack = new ItemStack(Material.matchMaterial(w_items.getUncommon2()));
-                   Stack.setAmount(64);
+                wItem item = w_items.getUncommon2();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
                    player.getInventory().addItem(Stack);
 
 
-                   player.sendMessage(ChatColor.BLUE + "Got 64 " + w_items.getUncommon2() + " (10% Chance)");
+                   player.sendMessage(ChatColor.BLUE +  "Got " + item.count + " " + item.name + " (10% Chance)");
                }
 
                if (rnd >= 70 && rnd < 80) {
-                   ItemStack Stack = new ItemStack(Material.matchMaterial(w_items.getUncommon3()));
-                   Stack.setAmount(64);
+                wItem item = w_items.getUncommon3();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
                    player.getInventory().addItem(Stack);
-                   player.sendMessage(ChatColor.BLUE + "Got 64 " + w_items.getUncommon3() + " (10% Chance)");
+                   player.sendMessage(ChatColor.BLUE +  "Got " + item.count + " " + item.name +  " (10% Chance)");
                }
 
                if (rnd >= 80 && rnd < 90) {
-                   ItemStack Stack = new ItemStack(Material.matchMaterial(w_items.getUncommon4()));
-                   Stack.setAmount(64);
+                wItem item = w_items.getUncommon4();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
                    player.getInventory().addItem(Stack);
-                   player.sendMessage(ChatColor.BLUE + "Got 64 " + w_items.getUncommon4() + " (10% Chance)");
+                   player.sendMessage(ChatColor.BLUE +  "Got " + item.count + " " + item.name + " (10% Chance)");
                }
 
                if (rnd >= 90 && rnd < 100) {
                    //wItem c5 = w_items.getCommon1Item();
-                   ItemStack Stack = new ItemStack(Material.matchMaterial(w_items.getUncommon5()));
-                   Stack.setAmount(64);
+                   wItem item = w_items.getUncommon5();
+                   ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                   Stack.setAmount(item.count);
                    player.getInventory().addItem(Stack);
-                   player.sendMessage(ChatColor.BLUE + "Got 64 " + w_items.getUncommon5() + " (10% Chance)");
+                   player.sendMessage(ChatColor.BLUE + "Got " + item.count + " " + item.name + " (10% Chance)");
                }
 
+               if (rnd >= 100 && rnd < 150) {
+                //wItem c5 = w_items.getCommon1Item();
+                wItem item = w_items.getCommon1();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                player.getInventory().addItem(Stack);
+                player.sendMessage(ChatColor.GREEN + "Got " + item.count + " " + item.name + " (25% Chance)");
+            }
 
+            /*
+             * 
                if (rnd >= 100 && rnd < 150) {
                    //   player.getInventory().addItem(new ItemStack(Material.GRASS_BLOCK));
                    try {
@@ -197,6 +240,8 @@ public class lottery implements CommandExecutor {
 
                    player.sendMessage(ChatColor.GREEN + "Got 1 " + w_items.getCommon1() + " (50% Chance)");
                }
+
+
                if (rnd >= 150 && rnd <= 200) {
 
 
@@ -209,6 +254,20 @@ public class lottery implements CommandExecutor {
 
                    }
                    player.sendMessage(ChatColor.GREEN + "Got 1 " + w_items.getCommon2() + " (25% Chance)");
+               }
+
+
+
+             * 
+             */
+
+               if (rnd >= 150 && rnd <= 200) {
+
+                wItem item = w_items.getCommon2();
+                ItemStack Stack = new ItemStack(Material.matchMaterial(item.name));
+                Stack.setAmount(item.count);
+                player.getInventory().addItem(Stack);
+                player.sendMessage(ChatColor.GREEN + "Got " + item.count + " " + item.name + " (25% Chance)");
                }
 
 
