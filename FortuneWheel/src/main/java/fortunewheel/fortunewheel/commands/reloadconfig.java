@@ -30,9 +30,11 @@ fw = plugin;
             return true;
         }
 
+       // if(sender.hasPermission("FortuneWheel.command.reloadconfig")) {        }
+
         fw.reloadConfig();
 
-        WheelItems wI = new WheelItems();
+        WheelItems wI = WheelItems.getInstance();
         wI.GetCfg(fw);
 
         Bukkit.getLogger().info("DEBUG: common 1 = " + wI.getCommon1());

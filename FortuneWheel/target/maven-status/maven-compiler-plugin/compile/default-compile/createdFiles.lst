@@ -1,7 +1,4 @@
 fortunewheel\fortunewheel\handlers\ConversionHandler.class
-fortunewheel\fortunewheel\commands\lottery.class
-fortunewheel\fortunewheel\commands\reloadconfig.class
-fortunewheel\fortunewheel\commands\wheel.class
 fortunewheel\fortunewheel\commands\buyvoucher.class
 fortunewheel\fortunewheel\commands\prizes.class
 fortunewheel\fortunewheel\commands\sendgold.class

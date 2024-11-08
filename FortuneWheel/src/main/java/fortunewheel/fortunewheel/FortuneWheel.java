@@ -15,7 +15,7 @@ public final class FortuneWheel extends JavaPlugin {
 
       //  saveDefaultConfig();
 
-        WheelItems wh = new WheelItems();
+        WheelItems wh = WheelItems.getInstance();
         wh.GetCfg(this);
 
 new ConversionHandler(this);

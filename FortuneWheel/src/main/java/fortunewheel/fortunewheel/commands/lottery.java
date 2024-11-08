@@ -1,6 +1,8 @@
 package fortunewheel.fortunewheel.commands;
 
 import fortunewheel.fortunewheel.staticvariables.WheelItems;
+import fortunewheel.fortunewheel.staticvariables.wItem;
+
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -42,9 +44,6 @@ public class lottery implements CommandExecutor {
     }
 
 
-
-
-
         return true;
 }
 
@@ -52,7 +51,7 @@ public class lottery implements CommandExecutor {
 
 
 
-        WheelItems w_items = new WheelItems();
+        WheelItems w_items = WheelItems.getInstance();
 
         int rnd = (int)(Math.random() * 200 + 1);
 
@@ -178,6 +177,7 @@ public class lottery implements CommandExecutor {
                }
 
                if (rnd >= 90 && rnd < 100) {
+                   //wItem c5 = w_items.getCommon1Item();
                    ItemStack Stack = new ItemStack(Material.matchMaterial(w_items.getUncommon5()));
                    Stack.setAmount(64);
                    player.getInventory().addItem(Stack);

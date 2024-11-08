@@ -30,7 +30,7 @@ FortuneWheel fw;
         }
 
 
-        WheelItems wI = new WheelItems();
+        WheelItems wI = WheelItems.getInstance();
 
         Player player = (Player) sender;
 

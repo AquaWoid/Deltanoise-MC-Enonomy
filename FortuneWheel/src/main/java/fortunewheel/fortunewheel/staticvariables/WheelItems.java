@@ -5,8 +5,23 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
 
+class wItem {
+    String name;
+    int count;
+
+    public wItem(String name, int count) {
+        this.name = name;
+        this.count = count;
+    }
+}
+
+
+
 public class WheelItems {
 
+
+    private static wItem m1;
+    private static wItem c1;
 
     private static String mythic1;
 
@@ -32,12 +47,29 @@ public class WheelItems {
     private static String common1;
     private static String common2;
 
+    private static WheelItems instance;
+
+
+
+public static WheelItems getInstance() {
+    if(instance == null) {
+        instance = new WheelItems();
+    }
+    return instance;
+}
+
 
 public void GetCfg(FortuneWheel fw) {
 
 
+
 FileConfiguration config = fw.getConfig();
 
+    m1 = new wItem (config.getString("mythical.mythic1"), config.getInt(String.format("mythical.mythic1.%s", config.getString("mythical.mythic1"))));
+    c1 = new wItem (config.getString("common.common1"), config.getInt(String.format("common.common1.%s", config.getString("common.common1"))));
+
+    m1.name = config.getString("mythical.mythic1");
+    m1.count = config.getInt("counts.m1");
 
     mythic1  = config.getString("mythical.mythic1");
     Bukkit.getLogger().info("Mythic 1 = " + mythic1);
@@ -137,5 +169,8 @@ FileConfiguration config = fw.getConfig();
 
     public  String getCommon2() {return common2;}
 
+    public wItem getCommon1Item() {
+        return c1;
+    }
 
 }

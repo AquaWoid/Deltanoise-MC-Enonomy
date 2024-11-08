@@ -1,6 +1,6 @@
 package fortunewheel.fortunewheel.commands;
 
-import fortunewheel.fortunewheel.staticvariables.WheelItems;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -36,9 +36,7 @@ public class sendgold implements CommandExecutor {
         Score sender_Score = objective.getScore(player_sender.getName());
 
 
-        for (Player p : Bukkit.getOnlinePlayers()){
-
-        }
+        //for (Player p : Bukkit.getOnlinePlayers()){}
 
 
         Player player_receiver = Bukkit.getPlayerExact(args[0]);

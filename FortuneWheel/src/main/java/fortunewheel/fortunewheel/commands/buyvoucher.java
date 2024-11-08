@@ -24,14 +24,19 @@ public class buyvoucher implements CommandExecutor {
 
         Scoreboard scoreboard = player.getScoreboard();
 
+        /*
+         * 
         if(scoreboard.getObjective("lotteryvoucher") == null) {
 
-            scoreboard.registerNewObjective("lotteryvoucher", "dummy");
+            scoreboard.registerNewObjective("lotteryvoucher", "dummy","lotteryvoucher");
         }
 
         if (scoreboard.getObjective("money") == null) {
             scoreboard.registerNewObjective("money", "dummy");
         }
+         * 
+         */
+
 
         Objective objective = scoreboard.getObjective("money");
         Score mScore = objective.getScore(player.getName());
