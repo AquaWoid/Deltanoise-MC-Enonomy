@@ -31,4 +31,14 @@ commands:
     usage: /sendgold
     aliases: sg
     permission: sendgold
+  setlotteryprize:
+    description: set the lottery prize
+    usage: /setlotteryprize
+    aliases: slp
+    permission: setlotteryprize
+  playdice:
+    description: play a game of dice with another player
+    usage: /playdice
+    aliases: pd
+    permission: playdice
 

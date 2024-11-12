@@ -9,7 +9,11 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Score;
 import org.bukkit.scoreboard.Scoreboard;
 
+import fortunewheel.fortunewheel.staticvariables.WheelItems;
+
 public class buyvoucher implements CommandExecutor {
+
+
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String  [] args) {
@@ -38,16 +42,19 @@ public class buyvoucher implements CommandExecutor {
          */
 
 
+        //Get scoreboard objective "money"
         Objective objective = scoreboard.getObjective("money");
-        Score mScore = objective.getScore(player.getName());
+        //Player Money Init
+        Score money = objective.getScore(player.getName());
 
+        //Lottery Voucher Objective init
         Objective lvObj = scoreboard.getObjective("lotteryvoucher");
         Score lvScore = lvObj.getScore(player.getName());
 
         int f = 0;
+        int prize = WheelItems.getInstance().getPrize();
 
-
-        int quantity =  1;
+        int quantity =  WheelItems.getInstance().getPrize();
 
         try {
             quantity = Integer.parseInt(args[0]);
@@ -55,7 +62,7 @@ public class buyvoucher implements CommandExecutor {
             quantity = 1;
         }
 
-        if(mScore.getScore() >= (2500 * quantity)) {
+        if(money.getScore() >= (prize * quantity)) {
 
             int tmp = lvScore.getScore();
 
@@ -72,16 +79,16 @@ public class buyvoucher implements CommandExecutor {
             }
 
 
-            int tmpm = mScore.getScore();
-            int fm = tmpm - (2500 * quantity);
+            int tmpm = money.getScore();
+            int fm = tmpm - (prize * quantity);
 
             lvScore.setScore(f);
-            mScore.setScore(fm);
+            money.setScore(fm);
 
-            player.sendMessage("Bought " + quantity + " Lottery Voucher for: " + ChatColor.GOLD + (2500 * quantity));
+            player.sendMessage("Bought " + quantity + " Lottery Voucher for: " + ChatColor.GOLD + (prize * quantity));
             player.sendMessage("Remaining Money: " + ChatColor.GOLD + fm);
         }else {
-            player.sendMessage(ChatColor.RED + "Not enough money " + ChatColor.WHITE + quantity + " Voucher = " + ChatColor.GOLD + (2500 * quantity));
+            player.sendMessage(ChatColor.RED + "Not enough money " + ChatColor.WHITE + quantity + " Voucher = " + ChatColor.GOLD + (prize * quantity));
         }
 
         return true;

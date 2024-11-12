@@ -1,6 +1,8 @@
 package fortunewheel.fortunewheel.staticvariables;
 
 import fortunewheel.fortunewheel.FortuneWheel;
+
+
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -37,6 +39,8 @@ public class WheelItems {
 
     private static WheelItems instance;
 
+    private static int lotteryprize;
+
 
 
 public static WheelItems getInstance() {
@@ -54,7 +58,7 @@ public void GetCfg(FortuneWheel fw) {
 FileConfiguration config = fw.getConfig();
 
 
-
+    lotteryprize = config.getInt("lottery.prize");
     mythic1  = new wItem (config.getString("mythical.mythic1.name"), config.getInt("mythical.mythic1.count"));
     Bukkit.getLogger().info("Mythic 1 = " + mythic1);
     mythic2 = new wItem (config.getString("mythical.mythic2.name"), config.getInt("mythical.mythic2.count"));
@@ -89,6 +93,12 @@ FileConfiguration config = fw.getConfig();
 
 
 }
+
+
+
+    public int getPrize() {
+        return lotteryprize;
+    }
 
     public wItem getMythic1() {
         return mythic1;

@@ -14,10 +14,8 @@ public class reloadconfig implements CommandExecutor {
     FortuneWheel fw;
 
 public  reloadconfig(FortuneWheel plugin) {
-
-fw = plugin;
+    fw = plugin;
     Bukkit.getLogger().info("Plugin = " + plugin.getName());
-
 }
 
 

@@ -1,22 +1,63 @@
 mythical:
-  mythic1: ELYTRA
-  mythic2: END_CRYSTAL
-  mythic3: SPAWNER
+  mythic1:
+    name: ELYTRA
+    count: 1
+  mythic2:
+    name: END_CRYSTAL
+    count: 1
+  mythic3:
+    name: SPAWNER
+    count: 1 
+
 legendary:
-  legend1: DIAMOND_SWORD
-  legend2: DIAMOND_PICKAXE
-  legend3: NETHERITE_INGOT
+  legend1:
+    name: BLAZE_SPAWN_EGG
+    count: 1 
+  legend2:
+    name: DIAMOND_PICKAXE
+    count: 1 
+  legend3:
+    name: NETHERITE_INGOT
+    count: 1 
+
 rare:
-  rare1: ZOMBIE_SPAWN_EGG
-  rare2: SKELETON_SPAWN_EGG
-  rare3: COW_SPAWN_EGG
-  rare4: CHICKEN_SPAWN_EGG
+  rare1:
+    name: VILLAGER_SPAWN_EGG
+    count: 1
+  rare2:
+    name: SKELETON_SPAWN_EGG
+    count: 1
+  rare3:
+    name: COW_SPAWN_EGG
+    count: 1 
+  rare4:
+    name: LEAD
+    count: 1
+
 uncommon:
-  uncommon1: EXPERIENCE_BOTTLE
-  uncommon2: COAL
-  uncommon3: LAPIS_LAZULI
-  uncommon4: REDSTONE
-  uncommon5: IRON_INGOT
+  uncommon1:
+    name: EXPERIENCE_BOTTLE
+    count: 50 
+  uncommon2:
+    name: COAL
+    count: 50 
+  uncommon3:
+    name: LAPIS_LAZULI
+    count: 50
+  uncommon4:
+    name: COPPER_ORE
+    count: 50
+  uncommon5:
+    name: IRON_INGOT
+    count: 50
+
 common:
-  common1: REDSTONE_BLOCK
-  common2: NAME_TAG
+  common1:
+    name: REDSTONE_BLOCK
+    count: 1
+  common2:
+    name: NAME_TAG
+    count: 1
+
+lottery:
+   prize: 2500  
